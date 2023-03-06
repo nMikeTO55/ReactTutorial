@@ -1,0 +1,24 @@
+{
+  "name": "reacttutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "server": "cd server; nodemon start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nMikeTO55/ReactTutorial.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nMikeTO55/ReactTutorial/issues"
+  },
+  "homepage": "https://github.com/nMikeTO55/ReactTutorial#readme",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
