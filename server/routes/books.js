@@ -10,8 +10,14 @@ let repository = new BookRepository(connectPool);
 router.post('/', function(req, res){
   console.log('post body', req.body);
  
-  repository.save(req.body);
-  res.sendStatus(200);
+  repository.save(req.body, (err)=>{
+    if(err){
+     res.sendStatus(500);
+    }
+    else {
+      res.sendStatus(200); 
+    }
+  });  
 })
 
 /* GET users listing. */

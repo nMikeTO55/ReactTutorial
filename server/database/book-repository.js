@@ -9,10 +9,7 @@ class BookRepository {
 
   save(book, callback) {
     
-    this.connectPool.getPool().query('insert into books set ?', book, (err, result) =>{
-    if(err) throw err;
-    console.log(result);
-  });
+    this.connectPool.getPool().query('insert into books set ?', book, callback);  
   }
 
   get(id) {}
